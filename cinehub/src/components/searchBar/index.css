@@ -1,0 +1,42 @@
+.searchbar{
+
+    font-size: 3.3rem;
+    font-weight: 500;
+    height: 7rem;
+    width: 30rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    color: rgba(34, 31, 31, 0.692);
+   
+}
+
+
+
+
+.searchbar::placeholder{
+    color: #0c0b0bb6; 
+    font-size: 3.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 3px;
+
+}
+
+.sb_btn{
+    padding: 2px;
+    background-color: transparent;
+    font-size: 3.3rem;
+    border-radius: 9999px;
+    font-family: 'Nunito', sans-serif;
+    color: #0c0b0bb6; 
+    margin-left: 0.5rem;
+    border: transparent;
+    width: 8rem;
+    height: 7rem;
+}
+
+.sb_btn:hover{
+    background-color: #413e3ec0;
+    border: transparent;
+    color: #faf6f6ce;
+}

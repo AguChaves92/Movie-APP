@@ -1,0 +1,5 @@
+export const GET_ALL="GET ALL"
+export const GET_BY_NAME="GET BY NAME"
+export const GET_MOVIES_DETAIL= "GET MOVIES DETAIL"
+export const FILTER="FILTER"
+export const RESET="RESET"
