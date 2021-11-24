@@ -3,7 +3,7 @@
 .search_container{
 margin-top: 5rem;
  height: 30rem;
- width: 80%;  
+ width: 90%;  
  background-color: rgba(240, 248, 255, 0.15);
  backdrop-filter: blur(5px);
  border-radius: 20px;
@@ -11,7 +11,7 @@ margin-top: 5rem;
 }
 
 .img{
-    width: 12rem;
+    width: 1200;
     height: 20rem;
     border-radius: 20px;
     padding: 1px;
@@ -31,7 +31,7 @@ margin-top: 5rem;
    display: flex;
    overflow-x: auto;
    flex-wrap: nowrap;
-    margin-top: 2rem;
+    margin-top: 20rem;
    height: 30rem;
 }
 
@@ -66,8 +66,7 @@ margin-top: 5rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-   
-    
+    height: 8rem;
 
 }
 
@@ -87,5 +86,11 @@ margin-top: 5rem;
 .home_subtitle{
     margin-right: 1rem;
     font-size: xxx-large;
+}
+
+
+.carousel{
+    margin-top: 4rem;
+    width:90vw
 }
 

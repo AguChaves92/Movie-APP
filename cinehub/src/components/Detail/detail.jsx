@@ -6,7 +6,7 @@ import { getMovieDetails } from "../../Redux/actions/index";
 import SearchBar from "../searchBar/index";
 
 function Detail(props) {
-  const movie = useSelector((state) => state.DetailedMovie);
+  const movie = useSelector((state) => state.detailedMovie);
   const dispatch = useDispatch();
   console.log(movie);
 

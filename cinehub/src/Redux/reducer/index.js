@@ -7,28 +7,29 @@ import {
 } from "../actions/types";
 
 const initialState = {
-  moviesOriginal: [],
-  FilteredMovies: [],
+  mainMovie:{},
+ 
+  filteredMovies: [],
   moviesSearched: [],
-  DetailedMovie: {},
+  detailedMovie: {},
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_ALL:
-      const moviesSorted = action.payload
-        .slice(0)
-        .sort((a, b) => (a.vote_average < b.vote_average ? 1 : -1));
+      console.log(action.payload);
+      const moviesSorted = action.payload.sort((a, b) => (a.vote_average < b.vote_average ? 1 : -1));
       return {
         ...state,
+  
         moviesOriginal: moviesSorted,
-        FilteredMovies: moviesSorted,
+        filteredMovies: moviesSorted,
       };
 
     case GET_BY_NAME:
       return {
         ...state,
-        FilteredMovies: moviesSorted,
+        filteredMovies: moviesSorted,
       };
 
     case FILTER:
@@ -47,18 +48,18 @@ const reducer = (state = initialState, action) => {
 
       return {
         ...state,
-        FilteredMovies: filteredMovies,
+        filteredMovies: filteredMovies,
       };
     case GET_MOVIES_DETAIL:
       return {
         ...state,
-        DetailedMovie: action.payload,
+        detailedMovie: action.payload,
       };
 
     case RESET:
       return {
         ...state,
-        FilteredMovies: state.moviesOriginal,
+        filteredMovies: state.moviesOriginal,
       };
     default:
       return state;
